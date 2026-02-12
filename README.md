@@ -188,18 +188,11 @@ Response:
         </ul>
     </div>
 
-<div class="section">
+    <div class="section">
         <h2>📜 License</h2>
+        <p>This project is licensed under the <strong>MIT License</strong>.</p>
+    </div>
 
-This project is licensed under the MIT License – see the LICENSE
- file for details.
-
-✅ Tip for professionalism: You can also add badges for Python version, build status, or license at the top of the README. Example:
-
-![Python](https://img.shields.io/badge/python-3.11-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-
- </div>
 </div>
 </body>
 </html>
