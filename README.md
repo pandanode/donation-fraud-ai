@@ -1,133 +1,163 @@
-<div align="center"> <hi>🛡️ Donation Fraud Detection AI</hi><br>
+Donation Fraud Detection AI
 
-An AI-powered system that detects fraudulent donation transactions using FastAPI, PostgreSQL, and machine learning classifiers to detect scam donation messages, fake NGOs, and suspicious payment channels. 
-The system integrates government NGO registry verification and deploys models via REST APIs with real-time risk scoring and explainable decisions.
+An AI-powered system that detects fraudulent donation transactions using FastAPI, PostgreSQL, and machine learning classifiers. The system identifies scam donation messages, fake NGOs, and suspicious payment channels, integrates government NGO registry verification, and deploys models via REST APIs with real-time risk scoring and explainable decisions.
 
-<br>
-## 🚀 Project Overview
+🚀 Project Overview
 
-Donation platforms are vulnerable to fraud activities such as fake campaigns, suspicious transactions, and bot-generated donations. 
+Donation platforms are vulnerable to fraud activities such as fake campaigns, suspicious transactions, and bot-generated donations.
 
 This project uses machine learning models to analyze transaction patterns and classify them as:
 
-- ✅ Legitimate
-- ❌ Fraudulent
+✅ Legitimate
 
-The goal is to build a scalable AI system that can assist fintech platforms in fraud prevention.
+❌ Fraudulent
 
----
-Scope of the Project
+The goal is to build a scalable AI system to assist fintech platforms in preventing donation fraud.
 
-This system will focus on:
+🎯 Scope
 
---NGO authenticity verification using Indian regulatory data sources.
---Detection of fake donation websites and impersonation campaigns.
---NLP-based scam message classification.
---QR code and UPI payment risk validation.
---Storage and auditing of fraud detection decisions.
---A donor-facing web interface and admin dashboard.
+The system focuses on:
 
-## 🧠 Features
+NGO authenticity verification using Indian regulatory data sources
 
-- Data preprocessing & cleaning
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Supervised Machine Learning models
-- Model evaluation (Accuracy, Precision, Recall, F1-score)
-- Fraud probability prediction
-- Future-ready deployment structure
+Detection of fake donation websites and impersonation campaigns
 
----
+NLP-based scam message classification
 
-## 🏗️ Tech Stack
+QR code and UPI payment risk validation
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib / Seaborn
-- Jupyter Notebook
-- Git & GitHub
+Storage and auditing of fraud detection decisions
 
----
+Donor-facing web interface and admin dashboard
 
-## 📊 Machine Learning Models Used
+🧠 Features
 
-- Logistic Regression
-- Random Forest
-- XGBoost (optional)
-- KNN (for comparison)
+Data preprocessing & cleaning
 
----
+Exploratory Data Analysis (EDA)
 
-## 📂 Project Structure
+Feature engineering
 
+Supervised Machine Learning models
 
+Model evaluation (Accuracy, Precision, Recall, F1-score)
 
-## 🚀 Project Overview
+Fraud probability prediction
 
-Donation platforms are vulnerable to fraud activities such as fake campaigns, suspicious transactions, and bot-generated donations. 
+Future-ready deployment structure with FastAPI & REST APIs
 
-This project uses machine learning models to analyze transaction patterns and classify them as:
+🏗️ Tech Stack
 
-- ✅ Legitimate
-- ❌ Fraudulent
+Backend / ML: Python, Pandas, NumPy, Scikit-learn
 
-The goal is to build a scalable AI system that can assist fintech platforms in fraud prevention.
+Visualization: Matplotlib, Seaborn
 
----
+Notebook / Prototyping: Jupyter Notebook
 
-## 🧠 Features
+Version Control: Git & GitHub
 
-- Data preprocessing & cleaning
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Supervised Machine Learning models
-- Model evaluation (Accuracy, Precision, Recall, F1-score)
-- Fraud probability prediction
-- Future-ready deployment structure
+Database: PostgreSQL
 
----
+API Framework: FastAPI
 
-## 🏗️ Tech Stack
+📊 Machine Learning Models Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib / Seaborn
-- Jupyter Notebook
-- Git & GitHub
+Logistic Regression
 
----
+Random Forest
 
-## 📊 Machine Learning Models Used
+XGBoost (optional)
 
-- Logistic Regression
-- Random Forest
-- XGBoost (optional)
-- KNN (for comparison)
+K-Nearest Neighbors (KNN) – for comparison
 
----
+📂 Project Structure
+donation-fraud-ai/
+├── data/                   # Raw and processed datasets
+├── notebooks/              # Jupyter notebooks for EDA & model training
+├── src/
+│   ├── preprocessing.py    # Data cleaning and feature engineering
+│   ├── models.py           # ML model definitions
+│   ├── predict.py          # Prediction logic
+│   └── utils.py            # Helper functions
+├── api/
+│   ├── main.py             # FastAPI entry point
+│   └── routes.py           # API endpoints
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+└── .gitignore
 
-## 📂 Project Structure
-
-
----
-
-## ⚙️ Installation
+⚙️ Installation
 
 Clone the repository:
 
-```bash
 git clone https://github.com/yourusername/donation-fraud-ai.git
 cd donation-fraud-ai
 
-<br>
-Install dependencies
 
-```bash
+Install dependencies:
+
 pip install -r requirements.txt
+
+
 Run the project:
-```bash
-python main.py
+
+python api/main.py
+
+
+The FastAPI server will start at http://127.0.0.1:8000 by default.
+
+🖥️ API Usage
+
+Example endpoint for fraud prediction:
+
+POST /predict
+Content-Type: application/json
+
+{
+  "donor_name": "John Doe",
+  "ngo_name": "Helping Hands",
+  "amount": 500,
+  "payment_channel": "UPI",
+  "message": "Urgent donation needed"
+}
+
+
+Response:
+
+{
+  "fraud_probability": 0.85,
+  "is_fraud": true,
+  "explanation": "Message contains scam keywords; NGO not verified."
+}
+
+📈 Model Evaluation Metrics
+
+Accuracy: Measures overall correctness of the model
+
+Precision: How many detected frauds were actual frauds
+
+Recall: How many actual frauds were correctly detected
+
+F1-Score: Harmonic mean of precision and recall
+
+🛠️ Contributing
+
+Fork the repository
+
+Create a new branch (git checkout -b feature/your-feature)
+
+Commit your changes (git commit -m "Add feature")
+
+Push to the branch (git push origin feature/your-feature)
+
+Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
+
+✅ Tip for professionalism: You can also add badges for Python version, build status, or license at the top of the README. Example:
+
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
