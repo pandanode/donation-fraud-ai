@@ -1,0 +1,114 @@
+# ===============================
+# PYTHON
+# ===============================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.py,cover
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# ===============================
+# MACHINE LEARNING FILES
+# ===============================
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.model
+*.sav
+
+# Dataset files (optional - remove if you want to upload small datasets)
+data/
+datasets/
+*.csv
+*.xlsx
+*.json
+
+# ===============================
+# JUPYTER NOTEBOOK
+# ===============================
+
+.ipynb_checkpoints/
+
+# ===============================
+# FASTAPI / SERVER
+# ===============================
+
+*.log
+logs/
+
+# ===============================
+# ENVIRONMENT VARIABLES (IMPORTANT)
+# ===============================
+
+.env
+.env.*
+*.env
+
+# ===============================
+# DATABASE FILES
+# ===============================
+
+*.db
+*.sqlite3
+
+# PostgreSQL local configs
+pgdata/
+
+# ===============================
+# IDE FILES
+# ===============================
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# ===============================
+# OS FILES
+# ===============================
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ===============================
+# GIT FILES
+# ===============================
+
+.git/
+.gitignore
+
+# ===============================
+# BUILD FILES
+# ===============================
+
+dist/
+build/
+*.egg-info/
+
+# ===============================
+# CACHE FILES
+# ===============================
+
+.cache/
+pytest_cache/
+
+# ===============================
+# TEMP FILES
+# ===============================
+
+tmp/
+temp/
